@@ -13,8 +13,9 @@ get_header();
 ?>
 
 	<section id="primary" class="content-area">
-		<main id="main" class="site-main">
+		<main class="site-inner">
 
+					<div id="left-main">
 			<?php
 
 			/* Start the Loop */
@@ -30,7 +31,7 @@ get_header();
 
 			endwhile; // End of the loop.
 			?>
-
+			</div>
 		</main><!-- #main -->
 	</section><!-- #primary -->
 

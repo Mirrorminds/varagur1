@@ -160,3 +160,59 @@ function my_custom_sidebar() {
     );
 }
 add_action( 'widgets_init', 'my_custom_sidebar' );
+function footer_news() {
+    register_sidebar(
+        array (
+            'name' => __( 'footer_news', 'your-theme-domain' ),
+            'id' => 'footer_news',
+            'description' => __( 'footer_news', 'your-theme-domain' ),
+            'before_widget' => '<div class="widget-content">',
+            'after_widget' => "</div>",
+            'before_title' => '<h3 class="widget-title">',
+            'after_title' => '</h3>',
+        )
+    );
+}
+add_action( 'widgets_init', 'footer_news' );
+function footer_address() {
+    register_sidebar(
+        array (
+            'name' => __( 'footer address', 'your-theme-domain' ),
+            'id' => 'footer_address',
+            'description' => __( 'footer_address', 'your-theme-domain' ),
+            'before_widget' => '<div class="widget-content">',
+            'after_widget' => "</div>",
+            'before_title' => '<h3 class="widget-title">',
+            'after_title' => '</h3>',
+        )
+    );
+}
+add_action( 'widgets_init', 'footer_address' );
+function footer_email() {
+    register_sidebar(
+        array (
+            'name' => __( 'footer Email', 'your-theme-domain' ),
+            'id' => 'footer_email',
+            'description' => __( 'footer_email', 'your-theme-domain' ),
+            'before_widget' => '<div class="widget-content">',
+            'after_widget' => "</div>",
+            'before_title' => '<h3 class="widget-title">',
+            'after_title' => '</h3>',
+        )
+    );
+}
+add_action( 'widgets_init', 'footer_email' );
+function footer_number1() {
+    register_sidebar(
+        array (
+            'name' => __( 'footer Number', 'your-theme-domain' ),
+            'id' => 'footer_number1',
+            'description' => __( 'footer_number1', 'your-theme-domain' ),
+            'before_widget' => '<div class="widget-content">',
+            'after_widget' => "</div>",
+            'before_title' => '<h3 class="widget-title">',
+            'after_title' => '</h3>',
+        )
+    );
+}
+add_action( 'widgets_init', 'footer_number1' );

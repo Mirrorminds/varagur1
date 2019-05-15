@@ -48,7 +48,11 @@
                    <div class="col-lg-3 links-1 location-1">
                      <p><i class="fa fa-map-marker" aria-hidden="true"></i> Location</p>
                      <ul>
-                         <li><a href="javascript:void(0)"><?php the_field('footer_address'); ?></a></li>
+                         <li><a href="javascript:void(0)"><?php
+                            if(is_active_sidebar('footer_address')){
+                            dynamic_sidebar('footer_address');
+                            }
+                        ?></a></li>
                       <!-- <li><a href="">Varagur PunnyaBhomi Trust,</a></li>
                        <li><a href="">kk nagar, visvanathapuram,</a></li>
                        <li><a href="">Tamilnadu,</a></li>
@@ -59,17 +63,30 @@
                    <div class="col-lg-3 links-1 contact-1">
                       <p><i class="fa fa-envelope" aria-hidden="true"></i> Email</p>
                     <ul>
-              <li><a href="mailto:<?php the_field('footer_email'); ?>"><?php the_field('footer_email'); ?></a></li>
+              <!--<li><a href="varagurtemples@gmail.com">varagurtemples@gmail.com</a></li>-->
+			  <li><a href="mailto:varagurtemples@gmail.com"><?php
+                            if(is_active_sidebar('footer_email')){
+                            dynamic_sidebar('footer_email');
+                            }
+                        ?></a></li>
                     </ul>
                    <p class="phone"><i class="fa fa-phone" aria-hidden="true"></i> Phone</p>
-                   <ul>
-                    <li><a href="tel:<?php the_field('footer_mobile_number'); ?>"><?php the_field('footer_mobile_number'); ?></a></li>
-                    <li><a href="tel:<?php the_field('phone_number'); ?>"><?php the_field('phone_number'); ?></a></li>
+                   <ul><?php
+                            if(is_active_sidebar('footer_number1')){
+                            dynamic_sidebar('footer_number1');
+                            }
+                        ?>
+                    <!--<li><a href="tel:"></a></li>
+                    <li><a href="tel:<?php the_field('phone_number'); ?>"><?php the_field('phone_number'); ?></a></li>-->
                     </ul>
                       </div>
                       <div class="col-lg-3 links-1 news-1">
                         <p>News Letter</p>
-						<?php echo do_shortcode("[newsletter]"); ?>
+						<?php
+                            if(is_active_sidebar('footer_news')){
+                            dynamic_sidebar('footer_news');
+                            }
+                        ?>
 
                       </div>
                   </div>

@@ -5,7 +5,9 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-9">
-				<main id="main" class="site-inner">
+				<main class="site-inner">
+
+					<div id="left-main">
 
 			<?php
 
@@ -22,14 +24,16 @@
 
 			endwhile; // End of the loop.
 			?>
-
+            </div>
 		</main><!-- #main -->
 
 			</div>
 			<div class="col-lg-3">
+			   <div id="right-sub" class="wid-inner">
 				<?php if ( is_active_sidebar( 'custom-side-bar' ) ) : ?>
     <?php dynamic_sidebar( 'custom-side-bar' ); ?>
 <?php endif; ?>
+            </div>
 			</div>
 		</div>
 	</div>

@@ -24,8 +24,12 @@
     <div class="main-head-1">
         <div class="container">
         <div class="sticky-headerdsssd">
-            <audio controls>
-  <source src="http://trydemo.xyz/varagur1/wp-content/uploads/2019/04/1_buvamvali.mp3" type="audio/mpeg">
+            <audio controls="" style="
+    filter: invert(75%) sepia(62%) saturate(6691%) hue-rotate(25deg) brightness(94%) contrast(93%);
+">
+  <source src="http://trydemo.xyz/varagur1/wp-content/uploads/2019/05/MainPageBanner.mp3" type="audio/mpeg" style="
+    background: transparent;
+">
 Your browser does not support the audio element.
 </audio>
 <div class="social-media">
@@ -39,7 +43,7 @@ Your browser does not support the audio element.
         
         <div class="row content-header">
 <div class="col-lg-1 col-2"><a href = "<?php echo get_bloginfo('wpurl'); ?>"><img src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/twentynineteen-child/images/header-side-1.png" class="img-responsive"></a></div>
-<div class="col-lg-10 col-8"><a href = "<?php echo get_bloginfo('wpurl'); ?>"><h1>Varagur Sri Kaliasanadhar & Sri Venkatesa Perumal Temple</h1><p>Varagur PunniyaBhumi Trust</p></a></div>
+<div class="col-lg-10 col-8"><a href = "<?php echo get_bloginfo('wpurl'); ?>"><h1>Sri MahaKaliasanadhar & Sri Venkatesa Perumal Temple - Varagur</h1><p>ஸ்ரீ மஹா கைலாசநாதர் & ஸ்ரீ வேங்கடேச பெருமாள் ஆலயம்  - வரகூர் </p></a></div>
 <div class="col-lg-1 col-2"><a href = "<?php echo get_bloginfo('wpurl'); ?>"><img src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/twentynineteen-child/images/header-side-2.png" class="img-responsive"></a></div>
 </div>
         </div>
